@@ -1,0 +1,84 @@
+/* static/home_css.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #045686;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(240, 233, 233);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(240, 233, 233);
+}
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    margin-right: 10px;
+    color: rgb(240, 233, 233);
+}
+
+input[type="text"] {
+    width: 100%; /* Make input field full width */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #f3dbdb;
+    color: rgb(9, 118, 149);
+}
+
+button {
+    padding: 8px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5798b7;
+    color: rgb(240, 233, 233);
+    border: none;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(240, 233, 233);
+}
+
+.note-box {
+    border: 1px solid #98d9e9;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(238, 232, 232, 0.1);;
+    color: rgb(240, 233, 233);
+}
+
+.timestamp {
+    font-weight: bold;
+    background-color: #7ec1d2; /* Background color for timestamp */
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.note {
+    margin-top: 5px;
+    color: rgb(240, 233, 233);
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 600px) {
+    form {
+        max-width: 600px; /* Limit form width on larger screens */
+    }
+}

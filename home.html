@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note Taking Application</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='home_css.css') }}">
+</head>
+<body>
+    <h2>Simply Notes</h2>
+
+    <form method="post" action="/">
+        <label for="note">Add Note:</label>
+        <input type="text" id="note" name="note">
+        <button type="submit">Add</button>
+    </form>
+
+    {% if notes %}
+    <h2>Notes:</h2>
+    <ul>
+        {% for note in notes %}
+            <li>
+                <div class="note-box">
+                    <div class="timestamp">{{ note.timestamp }}</div>
+                    <div class="note">{{ note.note }}</div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
